@@ -1,0 +1,130 @@
+body {
+    background-color: #2e3039;
+}
+
+#view-container-wrapper {
+    border-radius: 40px;
+    width: 600px;
+    margin: 20px auto;
+    background: linear-gradient(153deg, rgba(206,238,232,1) 0%, rgba(187,228,220,1) 22%, rgba(179,167,227,1) 70%, rgba(168,220,233,1) 100%);
+    box-shadow: 1px 1px 10px #a9a9a9, -1px -1px 10px #a9a9a9;
+}
+
+#view-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+}
+
+#page-label {
+    grid-column: 2;
+    text-align: center;
+    margin: auto;
+    font-family: Roboto,sans-serif;
+}
+
+#header-container {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin-bottom: 10px;
+}
+
+#back-button {
+    grid-column: 1;
+    width: 55px;
+    height: 40px;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(129deg, rgba(128,0,134,1) 0%, rgba(29,0,148,1) 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position 0.1s ease-in-out;
+    color: white;
+}
+
+#back-button:hover {
+    cursor: pointer;
+    background-position: 0 0;
+    outline: none;
+}
+
+.field-label {
+    grid-column: 1;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    line-height: 45px;
+    margin: auto 0;
+}
+
+input, input:disabled {
+    border: none;
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+    transition: border-bottom-color 0.1s;
+    display: inline-block;
+    margin: auto 0;
+    padding: 0 0 2px 3px;
+    font-family: "Segoe UI";
+    background-color: white !important;
+}
+
+select, select:disabled {
+    width: 90%;
+    height: 30px;
+    font-size: 18px;
+    display: inline-block;
+    margin: auto 0;
+    transition: border-color 0.1s;
+    font-family: "Segoe UI";
+    border: none;
+    background-color: white !important;
+    color: black;
+    opacity: 1;
+}
+
+textarea, textarea:disabled {
+    width: 90%;
+    resize: none;
+    height: auto;
+    font-size: 18px;
+    padding: 2px;
+    font-family: "Segoe UI";
+    border: none;
+    margin: 8px 0 0 0;
+    background-color: white;
+    color: black;
+}
+
+#search-tags-list {
+    grid-column: 2;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-tag {
+    display: flex;
+    width: auto;
+    height: 20px;
+    min-width: 30px;
+    border-radius: 15px;
+    padding: 5px 8px 5px 8px;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    margin: 10px 5px 0 5px;
+    background: linear-gradient(129deg, rgba(255,228,208,1) 0%, rgba(255,241,187,1) 100%);
+    justify-content: center;
+}
+

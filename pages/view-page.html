@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../resources/styles/view-page.css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/key.png">
+</head>
+<body>
+<div id="view-container-wrapper">
+  <div id="view-container">
+    <div id="header-container">
+      <button type="button" id="back-button">‹‹</button>
+      <h2 id="page-label">View entry page</h2>
+    </div>
+
+    <label class="field-label bold">Label:</label>
+    <input type="text" class="form-field" id="entry-label" disabled />
+
+    <label class="field-label">Entry type:</label>
+    <input type="text" id="entry-type" disabled />
+
+    <label class="field-label">Login:</label>
+    <input type="text" id="entry-login" disabled />
+
+    <label class="field-label">Password:</label>
+    <input type="text" id="entry-password" disabled />
+
+    <label class="field-label">Email:</label>
+    <input type="email" id="entry-email" disabled />
+
+    <label class="field-label">Phone:</label>
+    <input type="text" id="entry-phone" disabled />
+
+    <label class="field-label">Name:</label>
+    <input type="text" id="entry-name" disabled />
+
+    <label class="field-label">Surname:</label>
+    <input type="text" id="entry-surname" disabled />
+
+    <label class="field-label">Key:</label>
+    <input type="text" id="entry-key" disabled />
+
+    <label class="field-label no-margin">Info:</label>
+    <textarea name="info" id="info" cols="30" rows="3" disabled></textarea>
+
+    <label class="field-label no-margin">Search tags:</label>
+    <div id="search-tags-list"></div>
+
+
+  </div>
+</div>
+</body>
+<script src="../resources/scripts/EntryLayer/Entry.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryBuilder.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryStorage.js"></script>
+<script src="../resources/scripts/Session/AppSession.js"></script>
+<script src="../resources/scripts/FormScripts/view-page.js"></script>
+</html>

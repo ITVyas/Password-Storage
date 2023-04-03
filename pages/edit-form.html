@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit form | Password Storage</title>
+    <link rel="stylesheet" href="../resources/styles/form.css">
+    <link rel="icon" type="image/x-icon" href="../resources/images/key.png">
+</head>
+<body>
+<input type="text" id="key-phrase" placeholder="Input your key phrase" disabled>
+    <div id="form-container">
+        <form action="./index.html" id="form" method="post">
+            <div id="title-form-container">
+                <button type="button" id="back-button">‹‹</button>
+                <h2 id="form-label">Edit entry form</h2>
+            </div>
+
+            <label class="field-label bold">Label:</label>
+            <input type="text" class="form-field" id="entry-label" required />
+
+            <label class="field-label">Entry type:</label>
+            <select name="entryType" id="select-entry-type"  class="form-field">
+                <option value="Social Network">Social Network</option>
+                <option value="Game Account">Game Account</option>
+                <option value="Email">Email</option>
+                <option value="Activation Key">Activation Key</option>
+                <option value="Site Account">Site Account</option>
+                <option value="Custom" selected>Custom</option>
+            </select>
+
+            <label class="field-label">Login:</label>
+            <input type="text" class="form-field" id="entry-login" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Password:</label>
+            <input type="text" class="form-field" id="entry-password" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Email:</label>
+            <input type="email" class="form-field" id="entry-email" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Phone:</label>
+            <input type="text" class="form-field" id="entry-phone" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Name:</label>
+            <input type="text" class="form-field" id="entry-name" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Surname:</label>
+            <input type="text" class="form-field" id="entry-surname" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label">Key:</label>
+            <input type="text" class="form-field" id="entry-key" required />
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label no-margin">Info:</label>
+            <textarea name="info" id="info" cols="30" rows="3" required></textarea>
+            <button type="button" class="form-button delete">✖</button>
+
+            <label class="field-label no-margin">Search tags:</label>
+            <div id="tags-input-wrapper">
+                <input type="text" id="search-tag-input">
+                <button type="button" id="add-tag-button">+</button>
+            </div>
+
+            <div id="search-tags-list"></div>
+
+            <button type="submit" id="form-submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="../resources/scripts/Encryption/Encryption.js"></script>
+<script src="../resources/scripts/EntryLayer/Entry.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryBuilder.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryStorage.js"></script>
+<script src="../resources/scripts/Session/AppSession.js"></script>
+<script src="../resources/scripts/FormScripts/script-form.js"></script>
+<script src="../resources/scripts/FormScripts/script-editform.js"></script>
+</html>

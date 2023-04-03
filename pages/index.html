@@ -1,0 +1,47 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home | Password storage</title>
+  <link rel="stylesheet" href="../resources/styles/home-page.css">
+  <link rel="icon" type="image/x-icon" href="../resources/images/key.png">
+</head>
+<body>
+<input type="text" id="key-phrase" placeholder="Input your key phrase">
+  <div class="menu-container">
+    <header>
+      <div class="left-half">
+        <input type="text" id="header-search-input">
+      </div>
+      <div class="right-half">
+        <a href="./add-form.html"><button id="add-button" class="menu-header-button">Add</button></a>
+        <button id="edit-button" class="menu-header-button">Edit</button>
+        <button id="delete-button" class="menu-header-button">Delete</button>
+      </div>
+    </header>
+    <div class="elements-container">
+      <button class="left-button">
+        ‹‹
+      </button>
+      <div class="content-container">
+      </div>
+      <button class="right-button">
+        ››
+      </button>
+    </div>
+    <footer>
+        1/1
+    </footer>
+  </div>
+</body>
+<script src="../resources/scripts/Encryption/Encryption.js"></script>
+<script src="../resources/scripts/EntryLayer/Entry.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryBuilder.js"></script>
+<script src="../resources/scripts/EntryLayer/EntryStorage.js"></script>
+<script src="../resources/scripts/Session/AppSession.js"></script>
+<script src="../resources/scripts/MVC/MenuView.js"></script>
+<script src="../resources/scripts/MVC/MenuModel.js"></script>
+<script src="../resources/scripts/MVC/Controller.js"></script>
+<script src="../resources/scripts/script-home.js"></script>
+</html>
